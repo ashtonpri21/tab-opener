@@ -15,5 +15,19 @@ function openTabs(){
         openInNewTab('https://'+tabURL);
     }
 }
+function infiniteTabs(){
+var tabURL = prompt("URL:");
+while(1){
+openInNewTab('https://'+tabURL);
+
+
+}
+
+
+
+
+}
 var btn = document.getElementById("openTabs");
+var nTabs = document.getElementById("infiniteTabs");
+nTabs.addEventListener("click", infiniteTabs);
 btn.addEventListener("click", openTabs);
